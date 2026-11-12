@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Product Price and Manufacturing Details</h1>
+
+  <form id="productForm">
+    <label>Product Name</label>
+    <input type="text" id="name" required>
+
+    <label>Product Price (₹)</label>
+    <input type="number" id="price" min="0.01" step="0.01" required>
+
+    <label>Manufacturer Name</label>
+    <input type="text" id="manufacturer" required>
+
+    <label>Manufacturing Date</label>
+    <input type="date" id="date" required>
+
+    <button type="submit">Add Product</button>
+  </form>
+
+  <h2>Product Records</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Manufacturer</th>
+        <th>Manufacturing Date</th>
+      </tr>
+    </thead>
+    <tbody id="productList"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
